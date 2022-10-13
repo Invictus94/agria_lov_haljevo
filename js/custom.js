@@ -56,3 +56,16 @@ $(function () {
 
 
 });
+
+window.onload = function() {
+
+	let elements = document.getElementById("navbarsExample04").getElementsByClassName("nav-item");
+
+	for (let index = 0; index < elements.length; index++) {
+		const element = elements[index];
+
+		element.onclick = function() {
+			$('[aria-label="Toggle navigation"]').click();
+		}
+	}
+}
